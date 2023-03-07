@@ -5,6 +5,8 @@
 > has not yet been put into a public release of NEU. Obviously if you don't have NEU installed but want this feature then
 > by all means you can install this mod.
 
+**REQUIRES [OPTIFINE](https://optifine.net/downloads) TO WORK!!**
+
 **Usage:** /nedl
 
 ## What is this?
