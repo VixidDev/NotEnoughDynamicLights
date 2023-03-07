@@ -12,6 +12,8 @@ This mod takes advantage of an OptiFine feature, Dynamic Light Items, which enab
 around the player when holding them. This mod specifically adds a GUI to add specific Skyblock items and normal Minecraft
 items to a list which will also emit light whilst being held.
 
+Works best with Dynamic Lights set to Fancy in Video Settings and Brightness set to Moody.
+
 > Since OptiFine also checks the helmet slot for light emitting items, adding an item that can be equipped in the helmet
 > slot will also emit light without having to hold a specific or any item at all.
 
