@@ -73,9 +73,9 @@ class NotEnoughDynamicLights {
 
     @Mod.EventHandler
     fun postInit(event: FMLPostInitializationEvent) {
-        if (Loader.isModLoaded("notenoughupdates")) {
-            foundNEU = true
-        }
+//        if (Loader.isModLoaded("notenoughupdates")) {
+//            foundNEU = true
+//        }
     }
 
     @SubscribeEvent
