@@ -5,6 +5,8 @@
 > has not yet been put into a public release of NEU. Obviously if you don't have NEU installed but want this feature then
 > by all means you can install this mod.
 
+**Usage:** /nedl
+
 ## What is this?
 This mod takes advantage of an OptiFine feature, Dynamic Light Items, which enables certain items to emit a light level 
 around the player when holding them. This mod specifically adds a GUI to add specific Skyblock items and normal Minecraft
