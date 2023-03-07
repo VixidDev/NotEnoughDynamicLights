@@ -1,0 +1,12 @@
+{
+  "package": "dev.vixid.notenoughdynamiclights.mixin",
+  "refmap": "mixins.notenoughdynamiclights.refmap.json",
+  "minVersion": "0.7",
+  "plugin": "dev.vixid.notenoughdynamiclights.mixin.NEDLMixinConfigPlugin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+	"MixinOFDynamicLights"
+  ]
+}
