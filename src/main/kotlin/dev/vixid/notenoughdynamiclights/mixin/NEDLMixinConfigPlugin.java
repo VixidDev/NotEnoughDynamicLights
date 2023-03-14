@@ -1,6 +1,7 @@
 package dev.vixid.notenoughdynamiclights.mixin;
 
 import dev.vixid.notenoughdynamiclights.DynamicLightItemsEditor;
+import dev.vixid.notenoughdynamiclights.NotEnoughDynamicLights;
 import org.spongepowered.asm.lib.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -22,6 +23,15 @@ public class NEDLMixinConfigPlugin implements IMixinConfigPlugin {
 
   @Override
   public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
+    if ("dev.vixid.notenoughdynamiclights.mixin.MixinOFDynamicLights".equals(mixinClassName)) {
+      try {
+        Class.forName("io.github.moulberry.notenoughupdates.miscgui.DynamicLightItemsEditor");
+        NotEnoughDynamicLights.Companion.setNeuHasFeature(true);
+        return false;
+      } catch (ClassNotFoundException e) {
+        return true;
+      }
+    }
     return true;
   }
 

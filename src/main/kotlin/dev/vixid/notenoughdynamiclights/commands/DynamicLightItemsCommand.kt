@@ -17,7 +17,7 @@ class DynamicLightItemsCommand : CommandBase() {
     }
 
     override fun processCommand(sender: ICommandSender?, args: Array<out String>?) {
-        if (NotEnoughDynamicLights.foundNEU) {
+        if (NotEnoughDynamicLights.neuHasFeature) {
             Utils.addChatMessage("§c[NEDL] Found NEU installed, please use their implementation of this feature with /neudli")
             return
         }

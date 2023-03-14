@@ -8,9 +8,7 @@ import net.minecraft.client.Minecraft
 import net.minecraft.client.gui.GuiScreen
 import net.minecraftforge.client.ClientCommandHandler
 import net.minecraftforge.common.MinecraftForge
-import net.minecraftforge.fml.common.Loader
 import net.minecraftforge.fml.common.Mod
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 import net.minecraftforge.fml.common.gameevent.TickEvent
@@ -26,9 +24,9 @@ class NotEnoughDynamicLights {
     companion object {
         const val MOD_ID = "notenoughdynamiclights"
         const val MOD_NAME = "NotEnoughDynamicLights"
-        const val MOD_VERSION = "1.0.0"
+        const val MOD_VERSION = "1.0.1"
 
-        var foundNEU = false
+        var neuHasFeature = false
 
         var openGui: GuiScreen? = null
         var gson: Gson = GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create()
@@ -69,13 +67,6 @@ class NotEnoughDynamicLights {
         MinecraftForge.EVENT_BUS.register(EventListener())
 
         ClientCommandHandler.instance.registerCommand(DynamicLightItemsCommand())
-    }
-
-    @Mod.EventHandler
-    fun postInit(event: FMLPostInitializationEvent) {
-//        if (Loader.isModLoaded("notenoughupdates")) {
-//            foundNEU = true
-//        }
     }
 
     @SubscribeEvent
