@@ -42,4 +42,4 @@ Skyblock items internal names which allows for far better config saving than thi
 ## NEU Code
 
 This mod does include code from NEU that was not written by me and is cited in every instance where that code is found,
-and is also covered under the GPL-3.0 license in which this mod is also licensed under.
+and is also covered under the LGPL-3.0 license in which this mod is also licensed under.
