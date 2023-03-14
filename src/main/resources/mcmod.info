@@ -3,7 +3,7 @@
 	"modid": "notenoughdynamiclights",
 	"name": "NotEnoughDyamicLights",
 	"description": "A mod that allows items to utilise OptiFine's dynamic light items feature.",
-	"version": "1.0.0",
+	"version": "${version}",
 	"mcversion": "1.8.9",
 	"url": "https://github.com/VixidDev/NotEnoughDyamicLights",
 	"updateUrl": "",

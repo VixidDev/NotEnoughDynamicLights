@@ -4,11 +4,11 @@ plugins {
     id("gg.essential.loom") version "0.10.0.+"
     id("dev.architectury.architectury-pack200") version "0.1.3"
     id("com.github.johnrengelman.shadow") version "7.1.2"
-    kotlin("jvm") version "1.7.10"
+    kotlin("jvm") version "1.8.10"
 }
 
 group = "dev.vixid"
-version = "1.0.0"
+version = "1.0.1"
 
 // Toolchains:
 java {
@@ -85,8 +85,6 @@ tasks.withType(Jar::class) {
     manifest.attributes.run {
         this["FMLCorePluginContainsFMLMod"] = "true"
         this["ForceLoadAsMod"] = "true"
-
-        // If you don't want mixins, remove these lines
         this["TweakClass"] = "org.spongepowered.asm.launch.MixinTweaker"
         this["MixinConfigs"] = "mixins.notenoughdynamiclights.json"
     }
@@ -114,3 +112,8 @@ tasks.shadowJar {
 
 tasks.assemble.get().dependsOn(tasks.remapJar)
 
+tasks.processResources {
+    filesMatching(listOf("mcmod.info", "META_INF/mods.toml")) {
+        expand("version" to project.version)
+    }
+}
