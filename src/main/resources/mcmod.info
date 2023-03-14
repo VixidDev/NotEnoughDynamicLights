@@ -1,11 +1,11 @@
 [
   {
 	"modid": "notenoughdynamiclights",
-	"name": "NotEnoughDyamicLights",
+	"name": "NotEnoughDynamicLights",
 	"description": "A mod that allows items to utilise OptiFine's dynamic light items feature.",
 	"version": "${version}",
 	"mcversion": "1.8.9",
-	"url": "https://github.com/VixidDev/NotEnoughDyamicLights",
+	"url": "https://github.com/VixidDev/NotEnoughDynamicLights",
 	"updateUrl": "",
 	"authorList": [
 	  "Vixid"
